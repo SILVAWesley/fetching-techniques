@@ -1,0 +1,16 @@
+doctype html
+html(lang="en")
+  head
+    title= ("Seus Contatos")
+  body
+    h1 Seus contatos
+    h2 Contatos:
+    ul
+      each contact in contacts
+        li
+          div 
+            h3 #{contact.name}
+            p #{contact.phone}
+            p #{contact.company}
+
+
